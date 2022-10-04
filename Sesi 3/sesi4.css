@@ -1,0 +1,25 @@
+*{padding: 0; margin: 0;}
+
+/* membuat menu berjejer ke kanan */ 
+
+menu ul {float: left; list-style: none; background: pink;}
+menu ul  a {margin-right: 15px;text-decoration: none; padding: 3px 15px;}
+
+menu ul li {padding-right: 22px; float: left; border-right: 1px solid black;}
+menu ul li ul {display: none; }
+
+menu ul li:hover > ul {display: block;}
+menu ul li ul {position: absolute;}
+
+menu {margin-bottom: 20px;background: pink; height: 40px;line-height: 40px;}
+
+menu ul li ul li {float: none; position: relative; border-bottom: 3px solid black; 
+	text-align: left;}
+
+menu ul li:hover {background: grey;}
+menu ul li a:hover {color: whitesmoke;}
+
+menu ul ul ul {left: 100%;top: 0; width: 200px;}
+menu ul li ul li ul li {left: none;}
+
+
